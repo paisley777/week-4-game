@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals</title>
+
+    <!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!--CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+
+  <body>
+    <div>  
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-xs-12 col-md-10">
+
+          <!--HEADER-->
+          <div class="row">
+            <div class="col-xs-12 col-md-6"><h1>Crystal Collector</h1></div>
+            <div class="col-md-6"></div>
+          </div>
+
+          <!--MAIN CONTENT-->
+          <!--instructions-->
+          <div class="row top-margin-20">
+            <div class="col-xs-12 col-md-6">
+              <p>Earn points for the crystals you collect when you click on them!  If you match your score to the number below, you win. You lose the game if your score goes above the number.</p> 
+
+              <p>The value of each crystal is hidden until you click on it. Each time the game starts, the value of each crystal changes.</p>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+
+          <!--crystal images-->
+          <div class="row top-margin-20">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-3 js-crystal" id="crystal-1"><img src="assets/images/blue.png"></div>
+                <div class="col-md-3 js-crystal" id="crystal-2"><img src="assets/images/green.png"></div>
+                <div class="col-md-3 js-crystal" id="crystal-3"><img src="assets/images/red.png"></div>
+                <div class="col-md-3 js-crystal" id="crystal-4"><img src="assets/images/yellow.png"></div>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+
+          <!--show random number and score-->
+          <div class="row top-margin-20">
+
+            <div class="col-md-6">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 bold">Match this Number</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 bold font-40px" id="random-number"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 bold">Your Score</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 bold font-40px" id="score"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-6"></div>
+          </div>
+
+          <!--win or loss message-->
+          <div class="row top-margin-20">
+            <div class="col-xs-12 col-md-6 bold font-red" id="message"></div>
+            <div class="col-md-6"></div>
+          </div>
+
+          <!--score board-->
+          <div class="row top-margin-20">
+            <div class="col-md-6 bold bkg-green font-white">Your Record</div>
+            <div class="col-md-6"></div>
+          </div> 
+
+          <div class="row top-margin-20">
+            <div class="col-md-6">
+              <p id="wins"> Wins</p>
+              <p id="losses">Losses</p>
+            </div>
+            <div class="col-md-6"></div>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+
+  <script src="assets/javascript/game.js"></script>	
+  </body>
+
+</html>
+
